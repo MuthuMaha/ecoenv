@@ -8,27 +8,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<!-- SITE TITLE -->
-		<title>Ecoenv</title>			
+		<title>Greatway - Material Design Agency Template</title>			
 		<!-- Latest Bootstrap min CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('bootstrap/css/bootstrap.min.css')}}">	
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
 		<!-- Google Font -->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome.min.css')}}">
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 		<!--- owl carousel Css-->
-		<link rel="stylesheet" type="text/css" href="{{asset('owlcarousel/css/owl.carousel.css')}}">
-
-		<link rel="stylesheet" type="text/css" href="{{asset('owlcarousel/css/owl.theme.css')}}">			
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">				
 		<!-- venobox CSS -->		
-		<link rel="stylesheet" type="text/css" href="{{asset('css/venobox.css')}}">			
+		<link rel="stylesheet" href="assets/css/venobox.css">		
 		<!-- animate CSS -->		
-		<link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">		
+		<link rel="stylesheet" href="assets/css/animate.css">		
 		<!-- Style CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+		<link rel="stylesheet" href="assets/css/style.css">	
 		<!-- CSS FOR COLOR SWITCHER -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/switcher/switcher.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('css/switcher/style1.css')}}" id="colors">
+		<link rel="stylesheet" href="assets/css/switcher/switcher.css"> 	
+		<link rel="stylesheet" href="assets/css/switcher/style1.css" id="colors">		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -42,7 +41,7 @@
 		<!-- START PRELOADER -->
 		<div class="preloader">
 			<div class="status">
-				<div class="status-mes"><h4>Ecoenv</h4></div>
+				<div class="status-mes"><h4>GreatWay</h4></div>
 			</div>
 		</div>
 		<!-- END PRELOADER -->
@@ -57,7 +56,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-					<a href="index.html" class="navbar-brand"><img src="{{asset('img/logo.png')}}" alt="logo"></a>
+					<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <nav>
@@ -66,27 +65,10 @@
 							<li><a class="page-scroll" href="#about">About</a></li>
 							<li><a class="page-scroll" href="#service">Service</a></li>
 							<li><a class="page-scroll" href="#portfolio">Work</a></li>
-							<!-- <li><a class="page-scroll" href="#team">Team</a></li>	
-							<li><a class="page-scroll" href="#blog">Blog</a></li>						 -->	
-							<li><a class="page-scroll" href="#pricing">Supporters</a></li>
+							<li><a class="page-scroll" href="#team">Team</a></li>	
+							<li><a class="page-scroll" href="#blog">Blog</a></li>							
+							<li><a class="page-scroll" href="#pricing">Pricing</a></li>
 							<li><a class="page-scroll" href="#contact">Contact</a></li>
-							
-								@if (Route::has('login'))
-								<li>
-					                    @auth
-					                        <a class="btn btn-detault btn-light-bg" href="{{ url('/home') }}">Home</a>
-					                    @else
-					                        <a class="btn btn-detault btn-light-bg" href="{{ route('login') }}">Login</a>
-
-					                        @if (Route::has('register'))
-					                        <li>
-					                            <a class="btn btn-detault btn-light-bg" href="{{ route('register') }}">Register</a>
-					                        </li>
-					                        @endif
-					                    @endauth
-					                    </li>
-					            @endif
-							
 						</ul>
 					</nav>
                 </div> 
@@ -94,111 +76,20 @@
         </div> 
 		<!-- END NAVBAR -->	
 		
-		<!-- START HOME DESIGN -->
-	
 		<!-- START HOME -->
-		<section id="home" class="welcome-area">
-			<div class="welcome-slider-area">
-				<div id="welcome-slide-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-		
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<div class="single-slide-item slide-1">
-								<div class="single-slide-item-table">
-									<div class="single-slide-item-tablecell">
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<h2>we are connecting the Trust near you</h2>
-													<p>we will communicate with them to donate your excess things without tax</p>
-													<a class="btn btn-default btn-home-bg page-scroll" href="#video">Donate Now</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-slide-item slide-2">
-								<div class="single-slide-item-table">
-									<div class="single-slide-item-tablecell">
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<h2>Live with nature</h2>
-													<p>We have the plan,workers and material to use natural resources and get profit</p>
-													<a class="btn btn-default btn-home-bg page-scroll" href="#video">Search now</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-slide-item slide-3">
-								<div class="single-slide-item-table">
-									<div class="single-slide-item-tablecell">
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<h2>Education guide</h2>
-													<p>We have AI to guide rural or uneducated urban people children education</p>
-													<a class="btn btn-default btn-home-bg page-scroll" href="#video">Guide me</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-slide-item slide-4">
-								<div class="single-slide-item-table">
-									<div class="single-slide-item-tablecell">
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<h2>Home remedies and recepies</h2>
-													<p>People can share your home remedies or recepies.we will reward them through money based on like and share</p>
-													<a class="btn btn-default btn-home-bg page-scroll" href="#video">Post Now</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-slide-item slide-5">
-								<div class="single-slide-item-table">
-									<div class="single-slide-item-tablecell">
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<h2>Healthy & Cheap Ecommerce</h2>
-													<p>We have a best deal with all farmers to give cheap and healthy products</p>
-													<a class="btn btn-default btn-home-bg page-scroll" href="#video">Buy Now</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				 <!-- Controls -->
-				  <a class="left carousel-control" href="#welcome-slide-carousel" role="button" data-slide="prev">
-					<i class="fa fa-angle-left" aria-hidden="true"></i>
-				  </a>
-				  <a class="right carousel-control" href="#welcome-slide-carousel" role="button" data-slide="next">
-					<i class="fa fa-angle-right" aria-hidden="true"></i>
-				  </a>
-  
-				</div>
-			</div>
+		<section id="home" class="youtube_bg html-video">
+			<video class="text-center" muted="" autoplay="" loop="">
+				<!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+				<source type="video/webm" src="assets/videos/video.webm">
+				<!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+				<source type="video/mp4" src="assets/videos/video.mp4">
+				Your browser does not support the video tag.
+			</video>
+			<div class="home_text slider-caption">
+				<h2>we are awesome creative agency</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				<a class="btn btn-default btn-home-bg page-scroll" href="#video">Discover More</a>
+			</div>											
 		</section>
 		<!-- END  HOME DESIGN -->	
 
@@ -218,7 +109,7 @@
 					</div><!--- END COL -->
 					<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">		
 						<i class="fa fa-paper-plane-o"></i>
-						<h4>Transport</h4>
+						<h4>Meterial Design</h4>
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
 					</div><!--- END COL -->
 					<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
@@ -250,25 +141,25 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="skills">
 							<div class="progress-bar-linear">
-								<p class="progress-bar-text">Education,Health and wealth</p>
+								<p class="progress-bar-text">design</p>
 								<div class="progress-bar">
 									<span data-percent="95"></span>
 								</div>
 							</div>	
 							<div class="progress-bar-linear">
-								<p class="progress-bar-text">Profit from Natural resource </p>
+								<p class="progress-bar-text">Development </p>
 								<div class="progress-bar">
 									<span data-percent="90"></span>
 								</div>
 							</div>	
 							<div class="progress-bar-linear">
-								<p class="progress-bar-text">Farmer benefits</p>
+								<p class="progress-bar-text">Marketing </p>
 								<div class="progress-bar">
 									<span data-percent="75"></span>
 								</div>
 							</div>	
 							<div class="progress-bar-linear">
-								<p class="progress-bar-text">Trust benefits</p>
+								<p class="progress-bar-text">photography</p>
 								<div class="progress-bar">
 									<span data-percent="75"></span>
 								</div>
@@ -335,7 +226,7 @@
 					</div><!--- END COL -->
 					<div class="col-md-6 col-sm-6 col-xs-12"> 
 						<div class="feature_img">
-							<img src="{{ asset('img/women-laptop.png') }}" class="img-responsive" alt="" />
+							<img src="assets/img/women-laptop.png" class="img-responsive" alt="" />
 						</div>
 					</div><!--- END COL -->						
 				</div><!--- END ROW -->			
@@ -368,7 +259,7 @@
 					<div class="col-md-4 col-sm-4 col-xs-12 no-padding wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_service">
 							<i class="fa fa-bullhorn"></i>
-							<h4>Marketing</h4>
+							<h4>Advertising</h4>
 							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
 						</div>
 					</div><!--END COL -->
@@ -423,14 +314,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>								
-										<img src="{{asset('img/portfolio/1.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/1.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">												
 													<p>Branding</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/1.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/1.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -445,14 +336,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>
-										<img src="{{asset('img/portfolio/2.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/2.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">
 													<p>Webdesign</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/2.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/2.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -467,14 +358,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>
-										<img src="{{asset('img/portfolio/3.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/3.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">
 													<p>Package</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/3.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/3.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -489,14 +380,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>
-										<img src="{{asset('img/portfolio/4.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/4.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">	
 													<p>Video</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/4.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/4.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -511,14 +402,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>
-										<img src="{{asset('img/portfolio/5.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/5.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">
 													<p>Package</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/5.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/5.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -533,14 +424,14 @@
 							<div class="single_our_work">
 								<div class="sing_work_photo">
 									<figure>
-										<img src="{{asset('img/portfolio/6.jpg')}}" alt="img">
+										<img src="assets/img/portfolio/6.jpg" alt="img">
 										<div class="sing_work_text_link">
 											<div class="sing_work_content_wrap">
 												<div class="sing_work_content">
 													<p>Branding</p>
 													<h4>Portfolio Title</h4>
 													<div class="sing_link_img">
-														<a href="{{asset('img/portfolio/6.jpg')}}" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
+														<a href="assets/img/portfolio/6.jpg" class="lightbox search" data-gall="gall-work"><i class="fa fa-eye"></i></a>
 														<a href="single_project.html" class="link"><i class="fa fa-link"></i></a>
 													</div>	
 												</div>
@@ -574,7 +465,7 @@
 						<div class="counter">
 							<i class="fa fa-check"></i>
 							<h2 class="timer">28256 </h2>  
-							<h5>Educated children</h5>
+							<h5>Line Of Coding</h5>
 						</div>
 					</div><!--- END COL -->   
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
@@ -597,7 +488,7 @@
 		<!-- END COUNDOWN -->
 		
 		<!-- START ABOUT US -->
-		<section data-stellar-background-ratio="0.3" id="video" class="about_video section-padding" style="background-image: url({{ asset('img/bg/download-bg.jpg') }}); background-size:cover; background-position: center center;">
+		<section data-stellar-background-ratio="0.3" id="video" class="about_video section-padding" style="background-image: url(assets/img/bg/download-bg.jpg); background-size:cover; background-position: center center;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -621,7 +512,7 @@
 			
 
 		<!-- START OUR TEAM -->
-		<!-- <section id="team" class="our_team section-padding">
+		<section id="team" class="our_team section-padding">
 			<div class="container">		
 				<div class="row text-center">
 					<div class="section-title wow zoomIn">
@@ -631,7 +522,7 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="single_team">
 							<div class="img_wrap">
-								<img src="{{ asset('img/team/1.jpg') }}" class="img-responsive" alt="" />
+								<img src="assets/img/team/1.jpg" class="img-responsive" alt="" />
 								<div class="social_link">
 									<div class="social_table">
 										<ul class="list-inline">
@@ -647,11 +538,11 @@
 							<h3>Joe S. Sloat</h3>
 							<p>Co Founder</p>
 						</div>
-					</div> 		
+					</div> <!-- End Col -->				
 					<div class="col-md-3 col-sm-6">
 						<div class="single_team">
 							<div class="img_wrap">
-								<img src="{{ asset('img/team/2.jpg') }}" class="img-responsive" alt="" />
+								<img src="assets/img/team/2.jpg" class="img-responsive" alt="" />
 								<div class="social_link">
 									<div class="social_table">
 										<ul class="list-inline">
@@ -666,11 +557,11 @@
 							<h3>Myron J. Baxter</h3>
 							<p>CEO</p>
 						</div>
-					</div> 			
+					</div> <!-- End Col -->					
 					<div class="col-md-3 col-sm-6">
 						<div class="single_team">
 							<div class="img_wrap">
-								<img src="{{ asset('img/team/3.jpg') }}" class="img-responsive" alt="" />
+								<img src="assets/img/team/3.jpg" class="img-responsive" alt="" />
 								<div class="social_link">
 									<div class="social_table">
 										<ul class="list-inline">
@@ -685,11 +576,11 @@
 							<h3>Keith W. Nelson</h3>
 							<p>Designer</p>						
 						</div>
-					</div> 
+					</div> <!-- End Col -->				
 					<div class="col-md-3 col-sm-6">
 						<div class="single_team">
 							<div class="img_wrap">
-								<img src="{{ asset('img/team/4.jpg') }}" class="img-responsive" alt="" />
+								<img src="assets/img/team/4.jpg" class="img-responsive" alt="" />
 								<div class="social_link">
 									<div class="social_table">
 										<ul class="list-inline">
@@ -704,14 +595,14 @@
 							<h3>Ruth A. Neilsen</h3>
 							<p>Markater</p>						
 						</div>
-					</div> 
+					</div> <!-- End Col -->	
 				</div>
 			</div>
-		</section> -->
+		</section>
 		<!-- END TEAM -->		
 		
 		<!-- START NEWSLETTER -->
-		<section class="newsletter" style="background-image: url({{ asset('img/bg/newsletter-bg.jpg') }});  background-size:cover; background-position: center center;background-attachment:fixed;">
+		<section class="newsletter" style="background-image: url(assets/img/bg/newsletter-bg.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;">
 			<div class="newsletter_overlay section-padding">
 				<div class="container">
 					<div class="row">
@@ -740,43 +631,76 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="section-title wow zoomIn">
-						<h2>Ecoenv <span>Supporters</span></h2>
-						<div>
-							
-						</div>
+						<h2>Greatway <span>Pricing</span></h2>
+						<div></div>
 					</div>		
-					</div>
-
-		<!-- START COMPANY PARTNER LOGO  -->
-		<div class="partner-logo section-padding">
-			<div class="partner_overlay">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="partner wow fadeInRight">
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/1.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/2.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/3.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/4.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/5.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/6.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/1.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/2.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/3.png') }}" alt="image"></a>
-						    	<a href="#" target="_blank"><img src="{{ asset('img/partner/4.png') }}" alt="image"></a>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<h3>Basic</h3>
+							<div class="price color-one">
+								<span>$28</span>
+								per month
 							</div>
-						</div><!-- END COL  -->
-					</div><!--END  ROW  -->
-				</div><!-- END CONTAINER  -->
-			</div><!-- END OVERLAY -->
-		</div>
-		<!-- END COMPANY PARTNER LOGO -->
-			</div>
+							<ul class="pricing-list">
+								 <li>Free Access</li>
+								 <li>2 Unique Concepts</li>
+								 <li>5 Revisions</li>
+								 <li>Template design</li>
+								 <li>Secure data</li>
+								 <li>24/7 Support</li>
+							</ul>
+							<div class="pricing-btn">
+								<button class="btn-light-bg">Get Plan</button>
+							</div>
+						</div><!-- END PRICING TABLE -->
+					</div><!-- END COL -->
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<h3>Standard</h3>
+							<div class="price color-two">
+								<span>$48</span>
+								per month
+							</div>
+							<ul class="pricing-list">
+								 <li>Free Access</li>
+								 <li>2 Unique Concepts</li>
+								 <li>5 Revisions</li>
+								 <li>Template design</li>
+								 <li>Secure data</li>
+								 <li>24/7 Support</li>
+							</ul>
+							<div class="pricing-btn">
+								<button class="btn-light-bg">Get Plan</button>
+							</div>
+						</div><!-- END PRICING TABLE -->
+					</div><!-- END COL -->
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<h3>Premium</h3>
+							<div class="price color-three">
+								<span>$68</span>
+								per month
+							</div>
+							<ul class="pricing-list">
+								 <li>Free Access</li>
+								 <li>2 Unique Concepts</li>
+								 <li>5 Revisions</li>
+								 <li>Template design</li>
+								 <li>Secure data</li>
+								 <li>24/7 Support</li>
+							</ul>
+							<div class="pricing-btn">
+								<button class="btn-light-bg">Get Plan</button>
+							</div>
+						</div><!-- END PRICING TABLE -->
+					</div><!-- END COL  -->  
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
 		</section>
 		<!-- END PRICING -->
 
 		<!-- Start testimonials -->
-		<section class="testimonials_area" style="background-image: url({{ asset('img/bg/testimonial-bg.jpg') }});  background-size:cover; background-position: center center;background-attachment:fixed;">
+		<section class="testimonials_area" style="background-image: url(assets/img/bg/testimonial-bg.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;">
 			<div class="testimonial_overlay">
 				<div class="container">
 					<div class="row">
@@ -784,7 +708,7 @@
 							<div class="testimonials_carousel text-center">
 								<div class="single_testimonial">	
 									<div class="avatar">
-										<img src="{{ asset('img/testimonial/1.jpg') }}" alt="" />
+										<img src="assets/img/testimonial/1.jpg" alt="" />
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -794,7 +718,7 @@
 								
 								<div class="single_testimonial">
 									<div class="avatar">
-										<img src="{{ asset('img/testimonial/2.jpg') }}" alt="" />
+										<img src="assets/img/testimonial/2.jpg" alt="" />
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -804,7 +728,7 @@
 
 								<div class="single_testimonial">
 									<div class="avatar">
-										<img src="{{ asset('img/testimonial/3.jpg') }}" alt="" />
+										<img src="assets/img/testimonial/3.jpg" alt="" />
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -819,9 +743,33 @@
 		</section>
 		<!-- End testimonials -->	
 		
+		<!-- START COMPANY PARTNER LOGO  -->
+		<div class="partner-logo section-padding">
+			<div class="partner_overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="partner wow fadeInRight">
+						    	<a href="#" target="_blank"><img src="assets/img/partner/1.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/2.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/3.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/4.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/5.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/6.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/1.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/2.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/3.png" alt="image"></a>
+						    	<a href="#" target="_blank"><img src="assets/img/partner/4.png" alt="image"></a>
+							</div>
+						</div><!-- END COL  -->
+					</div><!--END  ROW  -->
+				</div><!-- END CONTAINER  -->
+			</div><!-- END OVERLAY -->
+		</div>
+		<!-- END COMPANY PARTNER LOGO -->
 
 		<!-- START HOME BLOG -->
-		<!-- <section id="blog" class="home_blog section-padding">
+		<section id="blog" class="home_blog section-padding">
 			<div class="container">
 				<div class="row">
 					<div class="section-title text-center wow zoomIn">
@@ -830,35 +778,35 @@
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="home_single_blog">
-							<img class="blog-photo" alt="" src="{{ asset('img/blog/blog-1.jpg') }}"/>
+							<img class="blog-photo" alt="" src="assets/img/blog/blog-1.jpg"/>
 							<div class="home_blog_text text-center wow fadeInLeft">
 								 <span><i class="fa fa-eye"></i> Admin</span><span><i class="fa fa-calendar"></i> Sep 05 2016</span>
 								 <h4>What is creative design</h4>
 								 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. Quisque bibendum mauris velit.</p>
 								<a class="btn-light-bg" href="#">Read More</a>
 							</div>
-						</div>
-					</div>
+						</div><!--- END SINGLE BLOG POST -->
+					</div><!--- END COL -->
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="home_single_blog">
-							<img class="blog-photo" alt="" src="{{ asset('img/blog/blog-2.jpg') }}"/>
+							<img class="blog-photo" alt="" src="assets/img/blog/blog-2.jpg"/>
 							<div class="home_blog_text text-center wow fadeInLeft">
 								 <span><i class="fa fa-eye"></i> Admin</span><span><i class="fa fa-calendar"></i> Sep 05 2016</span>
 								 <h4>what is material design</h4>
 								 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. Quisque bibendum mauris velit.</p>
 								<a class="btn-light-bg" href="#">Read More</a>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
+						</div><!--- END SINGLE BLOG POST -->
+					</div><!--- END COL -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
 		<!-- END HOME BLOG -->
 		
 		<!-- PROMOTION -->
 		<section class="buy_now">
 			<div class="container text-center">
-				<h3 class="buy_now_title">Are you ready for your next step?<a href="#" class="btn btn-default btn-promotion-bg">Login Now</a> </h3>
+				<h3 class="buy_now_title">Are you ready for your next project?<a href="#" class="btn btn-default btn-promotion-bg">Hire us</a> </h3>
 			</div><!--- END CONTAINER -->
 		</section>
 		<!-- END PROMOTION -->
@@ -874,7 +822,7 @@
 							<ul>
 								<li><i class="fa fa-rocket"></i>2369 Robinson Lane Jackson,OH 45640</li>
 								<li><i class="fa fa-phone"></i>(+1) 740-395-3829</li>
-								<li><i class="fa fa-envelope"></i>Info@Ecoenv.com</li>
+								<li><i class="fa fa-envelope"></i>Info@greatway.com</li>
 								<li><i class="fa fa-clock-o"></i>Mon - Fri: 08.00 - 16.00</li>
 							</ul>
 						</div>
@@ -920,7 +868,7 @@
 				  mapOptions);
 			  var marker = new google.maps.Marker({
 				position: map.getCenter(),
-				icon: '{{ asset("img/map_pin.png") }}',
+				icon: 'assets/img/map_pin.png',
 				map: map
 			  });
 			}
@@ -935,7 +883,7 @@
 				<div class="row">
 					<div class="col-sm-12 text-center wow zoomIn">
 						<div class="footer_content">
-							<a href="index.html"><img src="{{ asset('img/logo.png') }}" alt="" /></a>
+							<a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
 							<div class="footer_social">
 								<ul>
 									<li><a class="f_facebook  wow bounceInDown" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -946,7 +894,7 @@
 									<li><a class="f_skype wow bounceInDown" data-wow-delay=".5s" href="#"><i class="fa fa-skype"></i></a></li>
 								</ul>
 							</div>	
-							<p>Ecoenv &copy; 2019 All Rights Reserved.</p>
+							<p>Greatway &copy; 2016 All Rights Reserved.</p>
 						</div>
 												
 					</div><!--- END COL -->
@@ -956,7 +904,7 @@
 		<!-- END FOOTER -->						 
 
 		<!-- STYLE SWITCHER -->
-		<!--  <div id="style-switcher">
+		 <div id="style-switcher">
 			<h2>Choose Color<a href="#"><i class="fa fa-cog fa-spin"></i></a></h2>
 			<div>
 			  <ul class="colors" id="color1">
@@ -970,49 +918,36 @@
 				<li><a href="#" class="style8"></a></li>
 			  </ul>
 			</div>
-		 </div>   -->
+		 </div>  
 		 <!-- END OF STYLE SWITCHER -->	
 		 
 		<!-- Latest jQuery -->
-			<script type="text/javascript" src="{{ asset('js/jquery-1.12.4.min.js')}}"></script>
+			<script src="assets/js/jquery-1.12.4.min.js"></script>
 		<!-- Latest compiled and minified Bootstrap -->
-			<script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
-
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<!-- modernizr JS -->		
-			<script type="text/javascript" src="{{ asset('js/modernizr-2.8.3.min.js')}}"></script>
-
+			<script src="assets/js/modernizr-2.8.3.min.js"></script>			
 		<!-- stellar js -->
-			<script type="text/javascript" src="{{ asset('js/jquery.stellar.min.js')}}"></script>
-
+			<script src="assets/js/jquery.stellar.min.js"></script>		
 		<!-- countTo js -->
-			<script type="text/javascript" src="{{ asset('js/jquery.inview.min.js')}}"></script>
-	
+			<script src="assets/js/jquery.inview.min.js"></script>			
 		<!-- owl-carousel min js  -->
-			<script type="text/javascript" src="{{ asset('owlcarousel/js/owl.carousel.min.js')}}"></script>
-
+			<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>		
 		<!-- jquery mixitup min js -->
-			<script type="text/javascript" src="{{ asset('js/jquery.mixitup.js')}}"></script>
-
+			<script src="assets/js/jquery.mixitup.js"></script>		
 		<!-- jquery venobox min js -->
-			<script type="text/javascript" src="{{ asset('js/venobox.min.js')}}"></script>
-
+			<script src="assets/js/venobox.min.js"></script>		
 		<!-- scrolltopcontrol js -->
-			<script type="text/javascript" src="{{ asset('js/scrolltopcontrol.js')}}"></script>
-
+			<script src="assets/js/scrolltopcontrol.js"></script>
 		<!-- form-contact js -->
-			<script type="text/javascript" src="{{ asset('js/form-contact.js')}}"></script>
-
-		<!-- jquery appear js -->				
-			<script type="text/javascript" src="{{ asset('js/jquery.appear.js')}}"></script>
-
+			<script src="assets/js/form-contact.js"></script>			
+		<!-- jquery appear js -->			
+			<script src="assets/js/jquery.appear.js"></script>			
 		<!-- WOW - Reveal Animations When You Scroll -->
-			<script type="text/javascript" src="{{ asset('js/wow.min.js')}}"></script>
-
+		<script src="assets/js/wow.min.js"></script>
 		<!-- switcher js -->
-			<script type="text/javascript" src="{{ asset('js/switcher.js')}}"></script>
-
+        <script src="assets/js/switcher.js"></script>			
 		<!-- scripts js -->
-			<script type="text/javascript" src="{{ asset('js/scripts.js')}}"></script>
-
+		<script src="assets/js/scripts.js"></script>
     </body>
 </html>

@@ -14,7 +14,22 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<br>Your Role is
+                     <?php 
+                                   $lastUrl = Session::get("cart");
+// echo array_values($lastUrl)[0]; //Value
+// print_r($lastUrl);
+// print_r($lastUrl[0]);
+if($lastUrl){
+for($i=0;$i<=sizeof($lastUrl);$i++){
+
+echo $lastUrl[0][$i]->name.' ';
+
+}
+}
+// echo json_decode($lastUrl);
+
+?>
                 </div>
             </div>
         </div>
